@@ -1,0 +1,64 @@
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;   
+  gap: 0.5rem;
+
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background-color: #1e4fd8;
+  }
+
+  &:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+  }
+}
+
+.primary-btn.full-width {
+  width: 100%;
+}
+
+
+.floating-add-btn {
+  position: fixed;
+  top: 80px;
+  right: 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+
+  transition: background 0.2s ease, transform 0.15s ease;
+
+  &:hover {
+    background: #1e4fd8;
+    transform: translateY(-2px); 
+  }
+}
+
+
+.primary-btn .icon,
+.floating-add-btn .icon {
+  font-size: 1.2rem;
+}

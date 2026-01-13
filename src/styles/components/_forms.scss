@@ -1,0 +1,39 @@
+form {
+  max-width: 400px;
+  margin: auto;
+
+  input, button {
+    width: 100%;
+    margin-bottom: .5rem;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  label {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  select,
+  input {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form-section {
+  margin: 1.2rem 0 0.8rem;
+  font-size: 1.1rem;
+  color: #2563eb;
+}

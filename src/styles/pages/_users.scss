@@ -1,0 +1,56 @@
+.users-page {
+  padding: 2rem;
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .primary-btn {
+      background-color: #f59e0b;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+
+      &:hover {
+        background-color: #d97706;
+      }
+    }
+  }
+
+  .users-table {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+      th, td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+      }
+
+      th {
+        background: #f5f5f5;
+        font-weight: 600;
+      }
+
+      tr:hover {
+        background-color: #fdf6e3;
+      }
+
+      td button {
+        margin-right: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          color: #f59e0b;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "../variables" as v;
+.sidebar {
+  width: 220px;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        color: v.$dark;
+        font-weight: 500;
+
+        &:hover {
+          color: v.$primary;
+        }
+      }
+    }
+  }
+}

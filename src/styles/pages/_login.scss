@@ -1,0 +1,71 @@
+@use "../variables" as v;
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, v.$primary, v.$secondary);
+  font-family: v.$font-main;
+}
+
+.login-card {
+  background: v.$light;
+  padding: 2.5rem 3rem;
+  border-radius: v.$radius;
+  box-shadow: v.$shadow;
+  width: 350px;
+  text-align: center;
+
+  h1 {
+    color: v.$dark;
+    margin-bottom: 1.5rem;
+  }
+
+  .error {
+    color: v.$danger;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      text-align: left;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: v.$dark;
+    }
+
+    input {
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid v.$gray;
+      border-radius: v.$radius;
+      font-size: 1rem;
+      transition: border 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: v.$primary;
+      }
+    }
+
+    button {
+      padding: 0.8rem;
+      background: v.$primary;
+      color: v.$light;
+      border: none;
+      border-radius: v.$radius;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: v.$secondary;
+      }
+    }
+  }
+}
