@@ -31,7 +31,7 @@ Frontend del sistema de gestión de biblioteca. Permite administrar libros, auto
 1. Clonar el repositorio:
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/Yava1938/Ebac-Library-Front.git
 cd library-frontend
 
 npm install
